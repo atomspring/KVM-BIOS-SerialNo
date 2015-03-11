@@ -13,7 +13,7 @@ Step 2: Become root on a terminal of the host system. NOTE: I use SPICE as my KV
 
 Anyway, "nano /usr/bin/kvm-spice-serial" and stick this in it:
 
-#!/usr/bin/perl
+\#!/usr/bin/perl
 my $qemukvm = "/usr/bin/kvm-spice";
 my $args;
 my $serial;
