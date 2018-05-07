@@ -34,7 +34,7 @@ Step 3: Save the file, ```chmod +x /usr/bin/kvm-spice-serial```
 
 Step 4: Shutdown your VM, ```virsh list --all``` and then ```virsh edit <case sensitive VM name>```
 
-Step 5: Look for a line beginning with <emulator>, replace the specified executable with /usr/bin/kvm-spice-serial. Exit, make sure virsh doesn't complain about anything.
+Step 5: Look for a line beginning with ```<emulator>```, replace the specified executable with /usr/bin/kvm-spice-serial. Exit, make sure virsh doesn't complain about anything.
 
 Step 6: Update AppArmor: ```echo '/usr/bin/kvm-spice-serial rmix,' >> /etc/apparmor.d/abstractions/libvirt-qemu && service apparmor reload```
 
